@@ -1,0 +1,39 @@
+@startuml
+abstract class macdonald.menu
+annotation java.lang.Override
+class java.util.Calendar
+class javax.swing.JOptionPane
+class macdonald.MacDonald
+class macdonald.account
+class macdonald.breakfast
+class macdonald.dessert
+class macdonald.drink
+class macdonald.food
+class macdonald.meals
+class macdonald.order
+class macdonald.rewards
+macdonald.MacDonald ..> java.util.Calendar
+macdonald.MacDonald ..> javax.swing.JOptionPane
+macdonald.account ..> javax.swing.JOptionPane
+macdonald.breakfast --|> macdonald.menu
+macdonald.breakfast ..> java.lang.Override
+macdonald.breakfast ..> javax.swing.JOptionPane
+macdonald.dessert --|> macdonald.menu
+macdonald.dessert ..> java.lang.Override
+macdonald.dessert ..> javax.swing.JOptionPane
+macdonald.drink --|> macdonald.menu
+macdonald.drink ..> java.lang.Override
+macdonald.drink ..> javax.swing.JOptionPane
+macdonald.food --|> macdonald.menu
+macdonald.food ..> java.lang.Override
+macdonald.food ..> javax.swing.JOptionPane
+macdonald.meals --|> macdonald.menu
+macdonald.meals ..> java.lang.Override
+macdonald.meals ..> javax.swing.JOptionPane
+macdonald.order --|> macdonald.menu
+macdonald.order ..> java.lang.Override
+macdonald.order ..> javax.swing.JOptionPane
+macdonald.rewards --|> macdonald.menu
+macdonald.rewards ..> java.lang.Override
+macdonald.rewards ..> javax.swing.JOptionPane
+@enduml
